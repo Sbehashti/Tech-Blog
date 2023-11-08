@@ -1,0 +1,40 @@
+<div class="blog">
+
+  <div class="title">
+    <a href="/blog/{{id}}">{{title}}</a>
+    <span>({{format_date createdAt}})</span>
+  </div>
+
+  <div class="body">
+    {{content}}
+  </div>
+
+  {{#if loggedIn}}
+    <a href="/dashboard/edit/{{id}}" class="edit-link">Edit blog</a>
+  {{/if}}
+
+  <div class="comments">
+    {{#each comments}}
+      <div class="comment">
+        <div class="meta">
+          {{user.username}} on {{format_date createdAt}}
+        </div>
+        <div class="text">
+          {{text}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+
+  {{#if loggedIn}}
+    <form class="comment-form">
+      <div>
+        <textarea name="comment-body"></textarea>
+      </div>
+      <div>
+        <button type="submit">Add Comment</button>
+      </div>
+    </form>
+  {{/if}}
+
+</div>

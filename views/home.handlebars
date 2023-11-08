@@ -1,0 +1,29 @@
+{{> header}}
+
+<div class="home">
+
+  <h1>Latest Blogs</h1>
+
+  {{#each blogs}}
+    <div class="blog-preview">
+      <h2>
+        <a href="/blog/{{id}}">{{title}}</a>
+      </h2>
+      <div class="meta">
+        By {{user.username}} on {{format_date createdAt}} 
+      </div>
+      <p>
+        {{content}}
+      </p>
+    </div>
+  {{/each}}
+
+  {{#if loggedIn}}
+    <div class="new-blog-link">
+      <a href="/dashboard">+ New Blog</a>
+    </div>
+  {{/if}}
+
+</div>
+
+{{> footer}}

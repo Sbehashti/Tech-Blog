@@ -1,0 +1,27 @@
+<div class="dashboard">
+
+  <h2>Welcome, {{name}}!</h2>
+
+  <div class="new-blog">
+    <form>
+      <input type="text" name="title" placeholder="Title">
+      <textarea name="content"></textarea>
+      <button type="submit">Create Blog</button>
+    </form>
+  </div>
+
+  <h3>Your Blogs</h3>
+
+  {{#each blogs as |blog|}}
+    <div class="blog">
+      <div class="title">
+        <a href="/blog/{{blog.id}}">{{blog.title}}</a>
+      </div>
+      <div class="summary">
+        {{blog.content}}
+      </div>
+      <a href="/dashboard/edit/{{blog.id}}" class="edit-link">Edit Blog</a>
+    </div>
+  {{/each}}
+
+</div>

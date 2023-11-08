@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Coder's Tech Blog</title>
+
+  <!-- Link to CSS stylesheet -->
+  {{#if loggedIn}}
+    <link rel="stylesheet" href="/css/style.css"> 
+  {{else}}
+    <link rel="stylesheet" href="/css/style.css">
+  {{/if}}
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <!-- Navigation links -->
+      <nav>
+        {{#if loggedIn}}
+          <a href="/dashboard">Dashboard</a>
+          <button id="logout" class="btn-no-style">Logout</button>
+        {{else}}
+          <a href="/login">Login</a>
+        {{/if}}
+      </nav>
+    </header>
+
+    <main>
+      <!-- Handlebars template injection -->
+      {{{ body }}}
+    </main>
+    
+    <footer>
+      &copy; The Coder's Tech Blog 2023
+    </footer>
+  </div>
+
+  <!-- Link to JS scripts -->
+  <script src="/js/script.js"></script>
+
+</body>
+
+</html>

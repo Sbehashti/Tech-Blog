@@ -1,8 +1,11 @@
 # Tech-Blog
+
 ### Creating A CMS-Style Blog Site Following The MVC Paradigm Structure, Deploying It To Heroku.
+
 This project creates a CMS-style blog site that allows users to publish and comment on blog posts. It follows the MVC paradigm in its architectural structure using Node.js, Express, Sequelize, and Handlebars. The site is deployed thru Heroku.
 
 ## Table Of Contents
+
 1. [Acceptance Criteria](#acceptance-criteria)
 2. [Work Completed](#work-completed)
 3. [Work To Be Completed](#work-to-be-completed)
@@ -11,6 +14,7 @@ This project creates a CMS-style blog site that allows users to publish and comm
 6. [Credits](#credits)
 
 ## Accpetance Criteria
+
 - GIVEN a CMS-style blog site, WHEN I visit the site for the first time, THEN I am presented with the homepage, which includes existing blog posts if any have been posted, navigation links for the homepage and the dashboard, and the option to log in;
 - WHEN I click on the homepage option, THEN I am taken to the homepage;
 - WHEN I click on any other links in the navigation, THEN I am prompted to either sign up or sign in;
@@ -28,7 +32,8 @@ This project creates a CMS-style blog site that allows users to publish and comm
 - WHEN I click on the logout option in the navigation, THEN I am signed out of the site;
 - WHEN I am idle on the site for more than a set time, THEN I am able to view posts and comments but I am prompted to log in again before I can add, update, or delete posts.
 
-## Work Completed 
+## Work Completed
+
 - Created the CMS-style blog site using Express.js, Sequelize, Handlebars, and deployed to Heroku.
 - Set up the MVC paradigm structure with models, controllers, and views.
 - Created models and associations for Users, Blogs/Posts, and Comments using Sequelize.
@@ -41,23 +46,26 @@ This project creates a CMS-style blog site that allows users to publish and comm
 - Added logout functionality to destroy session and redirect to homepage.
 
 ## Work To Be Completed
+
 - Fixing bugs that prevent successful deployment to Heroku
 - Adding additional styling and formatting to improve UI/UX
 - Refining handlebars templates for cleaner code and logic
 
 ## Deployed Application URL
+
 https://sb-tech-blog-27af0843e735.herokuapp.com/
-- (Currently shows "Welcome to your new app" when trying to open application through Heroku)
 
 ## Deployed Application Screenshot
-![Alt text](sb-tech-blog-27af0843e735.herokuapp.com_.png)
-- (Currently shows "Welcome to your new app" when trying to open application through Heroku)
+
+![Alt text](localhost_3001_.png)
 
 ## Credits
+
 - Application Built/Created by Sier Behashti
 - Email: sbehashti@gmail.com GitHub: https://github.com/sbehashti
 
 ### Technologies Used:
+
 - Node.js
 - Express.js
 - Sequelize (for database management)
